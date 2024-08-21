@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body{ /*estilização do corpo do site com uma cor de fundo e tirando a margem*/
+            margin: 0;
+            background-color: rgb(250, 211, 218);
+        }
+        header{ /*estilizando o fundo do titulo, onde vai servir de faixa para a barra de navegação*/
+            background-color: pink;
+            grid-column-start: 1;
+            grid-column-end: 12;
+        }
+
+        .container{ /*ativando a funcionalidade do container*/
+            display: grid;
+        }
+        .menu{ /*estiizando o menu que irá ficar centralizado*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px; /*espaço entre os itens*/
+        }
+        ul{ 
+            list-style-type: none; /*removendo os marcadores da lista*/
+            color: black; /*cor do texto da lista*/
+            
+        }
+
+        li{float: left /*itens da lista alinhados a esquerda*/
+        }
+
+        a, a:link, a:visited{
+            text-decoration: none; /*remove sublinhado dos links*/
+            padding: 8px 16px;
+            border: solid black 1px; /*borda em volta do link*/
+            color: black; /*cor dos textos do link normais e visistados*/
+        }
+        a:hover{ /*ao passar o mouse sobre a barra de navegação, a cor muda*/
+            background-color: palevioletred;
+            color: white;
+        }
+        a:active{ /*ao clicar sobre a barra de navegação, a cor muda*/
+            background-color: palevioletred;
+            color: white;
+        }
+
+        aside img{ /*tamanho da imagem*/
+           width: 350px;
+           height: 500px;
+           padding-left: 100px;
+        }
+        .principal{ /*estilização da posição dos textos principais*/
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-size: 50px;
+        }
+        
+       h1{ /*estilização específica do título maior*/
+        font-family:'Brush Script MT', Brush Script Std, cursive;
+        color: rgb(243, 0, 113);
+        text-align: center;
+        padding-right: 100px;
+        
+       }
+       p{/*estilização do texto menor*/
+        text-align: center;
+        padding-right: 100px;
+       }
+          @media only screen and (max-width: 767px) { /*estilização para dispositivos menores*/
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_eu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+       
+</style>
+
+    </style>
+</head>
+<body>
+        <header class="container" menu>
+            <nav class="container menu">
+                <ul> <!--criando os itens da barra de navegação-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobremim.html">Sobre mim</a></li>
+                    <li><a href="formação.html">Formação Acadêmica</a></li>
+                    <li><a href="portfolio.html">Portfólio</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <div class="container wrapper">
+            <aside class="imagem_eu"> <!--adicionando imagem-->
+                <img src="imagem_eu.jpg">
+            </aside>
+            <!-- textos principais --> 
+            <section class="principal"> 
+                <h1>Camila Barbosa</h1>
+                <p>Portfólio Pessoal</p>
+            </section>
+        </div>
+        
+</body>
+</html>

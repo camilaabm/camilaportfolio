@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            background-color: rgb(250, 211, 218);
+        }
+        header{
+            background-color: pink;
+            grid-column-start: 1;
+            grid-column-end: 12;
+        }
+
+        .container{
+            display: grid;
+        }
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+        ul{
+            list-style-type: none;
+            color: black;
+            
+        }
+
+        li{float: left
+        }
+
+        .menu-link, .menu-link:link, .menu-link:visited{
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid black 1px;
+            color: black;
+        }
+        .menu-link:hover{
+            background-color: palevioletred;
+            color: white;
+        }
+        .menu-link:active{
+            background-color: palevioletred;
+            color: white;
+        }
+
+
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+            font-size: 50px;
+        }
+        footer{ /*estilizando o rodapé*/
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: pink;
+            text-align: center;
+            color: black;
+        }
+        h1{
+        font-family:'Times New Roman', Times, serif;
+        color: black;
+        text-align: center;
+        
+       }
+       p{
+        text-align: center;
+        padding-right: 25px;
+        font-size: 30px;
+        padding-left: 25px;
+       }
+       p{
+        color: black;
+       }
+        
+          @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_eu {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+       
+</style>
+
+    </style>
+</head>
+<body>
+        <header class="container" menu>
+            <nav class="container menu">
+                <ul>
+                    <li><a class= "menu-link" href="index.html">Home</a></li>
+                    <li><a class= "menu-link" href="sobremim.html">Sobre mim</a></li>
+                    <li><a class= "menu-link" href="formação.html">Formação Acadêmica</a></li>
+                    <li><a class= "menu-link" href="portfolio.html">Portfólio</a></li>
+                    <li><a class= "menu-link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+            <section class="principal">
+                <h1>Contato:</h1>
+                <p>Telefone: (19)99438-8090</p>
+            <p>Email:<a href="mailto:camila.bmonteirosilva@gmail.com">camila.bmonteirosilva@gmail.com</a></p>
+            <br>
+            <br>
+            <br>
+            <p>Mensagem:</p>
+        </section>
+    </div>
+    <footer class="container">
+        <form>
+            <h1>Nome:<input type="text"></h1> <!--input para escrever nome e telefone-->
+            <h1>Telefone:<input type="text"></h1>
+            <textarea style="width: 600px; height: 150px; text-align: center;" placeholder="Digite aqui sua mensagem..."></textarea> <!--caixa de texto para escrever-->
+        <br>
+        <button type="submit">Enviar</button> </form> <!--botão não funcional de enviar-->
+    </footer>
+    
+        
+</body>
+</html>

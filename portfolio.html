@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+    
+            background-color: rgb(250, 211, 218);
+        }
+        .container{
+            display: grid;
+            
+        }
+        header{
+            background-color: pink;
+            grid-column-start:1;
+            grid-column-end:12;
+        }
+
+        
+        .menu{
+            grid-column-start: 1;
+            grid-column-end: 12;
+            justify-content: center;
+            gap: 20px;
+        }
+        .principal{
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        .card { /*estilização do cartão com conteúdo*/
+            display: flex;
+            flex-flow: row wrap; /*itens organizados em linha com espaçamento*/
+            text-align: center;
+            color: black;
+            border: black;
+            margin-left: 100px;
+            margin-right: 100px;
+        
+       }
+       h1{
+        text-align: center;
+        font-size: 80px;
+    
+       }
+      
+        
+        ul{
+            list-style-type: none;
+            color: black;
+            
+        }
+
+        li{float: left
+        }
+
+        .menu-link, .menu-link:link, .menu-link:visited{ 
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid black 1px;
+            color: black;
+        }
+        .menu-link:hover{
+            background-color: palevioletred;
+            color: white;
+        }
+        .menu-link:active{
+            background-color: palevioletred;
+            color: white;
+        }
+
+      
+        .img { /*estilizando imagem contida no card*/
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img { /*definindo tamanho da imagem*/
+            width: 125px;
+            height: 115px;
+        }
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;}
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+</style>
+
+    </style>
+</head>
+<body>
+       <header>
+            <nav class="container menu">
+                <ul>
+                    <li><a class= "menu-link" href="index.html">Home</a></li> <!--diferenciando os a href menu e do link nos card-->
+                    <li><a class= "menu-link" href="sobremim.html">Sobre mim</a></li>
+                    <li><a class= "menu-link" href="formação.html">Formação Acadêmica</a></li>
+                    <li><a class= "menu-link" href="portfolio.html">Portfólio</a></li>
+                    <li><a class= "menu-link" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+            <section class="principal">
+                <h1>
+Portfólio
+                </h1>
+                <div class="card">
+                    <div class="img">
+                        <img src="portfolioimg.png" >
+                        <div class="">
+                            <h2><a href="https://camilaabm.github.io/aulapr-tica3programweb/">Site utilizando fundamentos de css e html</a></h2>
+                            
+                        </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="portfolioimg.png" >
+                        <div class="">
+                            <h2><a href="https://camilaabm.github.io/pizza/">Site  utilizando   fundamentos  de  html</a></h2>
+                            
+                        </div>
+                </div>
+                
+            </section>
+        </div>
+        
+</body>
+</html>
